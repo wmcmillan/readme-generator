@@ -40,11 +40,23 @@ inquirer.prompt([
         type:"input",
         name:"title",
         message:"What is the title of your project?",
+        validate: function(answer) {
+            if (answer.length < 1) {
+                return console.log("Please enter a valid project title.")
+            }
+            return true;
+        }
     },
     {
         type:"input",
         name:"description",
         message:"Describe your project.",
+        validate: function(answer) {
+            if (answer.length < 1) {
+                return console.log("Please enter a valid project description.")
+            }
+            return true;
+        }
     },
     {
         type:"input",
