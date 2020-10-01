@@ -6,6 +6,7 @@ var inquirer = require("inquirer");
 var fs = require("fs");
 //create an array of questions to ask the user
 const questions = [
+    "What is your Github username?",
     "What is your project title?",
     "Describe your project.",
     "Any special installation instructions?",
