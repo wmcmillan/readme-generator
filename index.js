@@ -2,18 +2,7 @@
 //install my dependencies- inquirer
 
 //require all the dependencies I'll need- inquirer, fs
-var inquirer = require("inquirer");
-var fs = require("fs");
-//create an array of questions to ask the user
-const questions = [
-    "What is your Github username?",
-    "What is your project title?",
-    "Describe your project.",
-    "Any special installation instructions?",
-    "Usage information?",
-    "Contribution guidelines?",
-    "Test instructions?"
-];
+
 
 //write a README in a markdown file to generate a template
     //then copy/paste that template
@@ -21,7 +10,63 @@ const questions = [
 //function that will generate my readme template
 
 //use inquirer to prompt users with questions
-
+var inquirer = require("inquirer");
+var fs = require("fs");
+//create an array of questions to ask the user
+inquirer.prompt([
+    {
+        type:"input",
+        name:"username",
+        message:"What is your github username?",
+        validate: function(answer) {
+            if (answer.length < 1) {
+                return console.log("Please enter a valid Github username.")
+            }
+            return true;
+        }
+    },
+    {
+        type:"input",
+        name:"repo",
+        message:"What is the name of your Github repository?",
+        validate: function(answer) {
+            if (answer.length < 1) {
+                return console.log("Please enter a valid Github repository.")
+            }
+            return true;
+        }
+    },
+    {
+        type:"input",
+        name:"title",
+        message:"What is the title of your project?",
+    },
+    {
+        type:"input",
+        name:"description",
+        message:"Describe your project.",
+    },
+    {
+        type:"input",
+        name:"installation",
+        message:"Any special installation instructions?",
+    },
+    {
+        type:"input",
+        name:"usage",
+        message:"Any instructions or examples of the project to demonstrate usage?",
+    },
+    {
+        type:"input",
+        name:"guidelines",
+        message:"Any guidelines on how other developers can contribute to your project?",
+    },
+    {
+        type:"input",
+        name:"testInstructions",
+        message:"Any instructions for a test?",
+    },
+])
 //use answers that come back from inquirer - pass those into my generate readme function
 
 //write file using template generated from readme function
