@@ -78,7 +78,9 @@ inquirer.prompt([
         name:"testInstructions",
         message:"Any instructions for a test?",
     },
-])
+]).then(function(response){
+    console.log(response)
+})
 //use answers that come back from inquirer - pass those into my generate readme function
 
 //write file using template generated from readme function
