@@ -18,11 +18,11 @@ function mdTemplate(userResponse) {
 7. [ Questions ](#questions)
 <br>
 <a name="description"></a>
-## 1. Description
+##1. Description
 ${userResponse.description}
 <br>
 <a name="install"></a>
-## 2. Installation
+##2. Installation
 ${userResponse.installation}
 <br>
 <a name="usage"></a>
