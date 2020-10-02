@@ -42,8 +42,8 @@ ${userResponse.testInstructions}
 ${userResponse.license}
 <br>
 <a name="questions"></a>;
-## 7. If you have any questions direct them to
-${userResponse.username} on Github`;
+## 7. If you have any questions contact me at:
+Github: ${userResponse.username}`;
 }
 
 //use inquirer to prompt users with questions
