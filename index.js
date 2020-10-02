@@ -17,8 +17,8 @@ function mdTemplate(userResponse) {
 6. [ License ](#license)
 7. [ Questions ](#questions)
 <br>
-## 1. Description
 <a name="description"></a>
+## 1. Description
 ${userResponse.description}
 <br>
 <a name="install"></a>
@@ -41,7 +41,7 @@ ${userResponse.testInstructions}
 ## 6. License
 ${userResponse.license}
 <br>
-<a name="questions"></a>;
+<a name="questions"></a>
 ## 7. If you have any questions contact me at:
 Github: ${userResponse.username}`;
 }
