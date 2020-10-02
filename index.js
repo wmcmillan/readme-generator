@@ -119,6 +119,15 @@ inquirer
   ])
   .then(function (response) {
     console.log(response);
+    const mdCreate = mdTemplate(response)
+
+    fs.writeFile("README.md", mdCreate, function(err){
+        if(err){
+            console.log(err)
+        }else{
+            console.log("Wrote a README!")
+        }
+    })
   });
 //use answers that come back from inquirer - pass those into my generate readme function
 
