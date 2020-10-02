@@ -18,31 +18,31 @@ function mdTemplate(userResponse) {
 7. [ Questions ](#questions)
 <br>
 <a name="intro"></a>
-## 1. Description
+## Description
 ${userResponse.description}
 <br>
 <a name="install"></a>
-### 2. Installation
+## Installation
 ${userResponse.installation}
 <br>
 <a name="usage"></a>
-### 3. Usage
+## 3. Usage
 ${userResponse.usage}
 <br>
 <a name="contributing"></a>
-### 4. Contributors
+## 4. Contributors
 ${userResponse.guidelines}
 <br>
 <a name="tests"></a>
-### 5. Tests
+## 5. Tests
 ${userResponse.testInstructions}
 <br>
 <a name="license"></a>
-### 6. License
+## 6. License
 ${userResponse.license}
 <br>
 <a name="questions"></a>;
-### 7. If you have any questions direct them to
+## 7. If you have any questions direct them to
 ${userResponse.username} on Github`;
 }
 
