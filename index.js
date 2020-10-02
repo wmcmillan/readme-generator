@@ -17,12 +17,12 @@ function mdTemplate(userResponse) {
 6. [ License ](#license)
 7. [ Questions ](#questions)
 <br>
-<a name="intro"></a>
-## Description
+## 1. Description
+<a name="description"></a>
 ${userResponse.description}
 <br>
 <a name="install"></a>
-## Installation
+## 2. Installation
 ${userResponse.installation}
 <br>
 <a name="usage"></a>
