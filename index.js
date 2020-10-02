@@ -1,11 +1,13 @@
 //npm initialization
 //install my dependencies- inquirer
 //require all the dependencies I'll need- inquirer, fs
-
+var inquirer = require("inquirer");
+var fs = require("fs");
 //write a README in a markdown file to generate a template
 //then copy/paste that template
+//function that will generate my readme template
 function mdTemplate(userResponse) {
-  `# ${userResponse.title}
+  return `# ${userResponse.title}
 ## Contents 
 1. [ Description ](#description)
 2. [ Installation ](#installation)
@@ -35,13 +37,10 @@ ${userResponse.testInstructions}
 ${userResponse.license}
 <a name="questions"></a>;
 ### 7. If you have any questions direct them to...
-${userResponse.questions}`
+${userResponse.username} + ${userResponse.repo}`;
 }
-//function that will generate my readme template
 
 //use inquirer to prompt users with questions
-var inquirer = require("inquirer");
-var fs = require("fs");
 //create an array of questions to ask the user
 inquirer
   .prompt([
@@ -119,16 +118,18 @@ inquirer
   ])
   .then(function (response) {
     console.log(response);
-    const mdCreate = mdTemplate(response)
-
-    fs.writeFile("README.md", mdCreate, function(err){
-        if(err){
-            console.log(err)
-        }else{
-            console.log("Wrote a README!")
-        }
-    })
+    const mdCreate = mdTemplate(response);
+    
+        fs.writeFile("README.md", mdCreate, function (err) {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("Wrote a README!");
+          }
+        });
   });
+
+
 //use answers that come back from inquirer - pass those into my generate readme function
 
 //write file using template generated from readme function
