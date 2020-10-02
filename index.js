@@ -20,24 +20,30 @@ function mdTemplate(userResponse) {
 <a name="intro"></a>
 ## 1. Description
 ${userResponse.description}
+<br>
 <a name="install"></a>
 ### 2. Installation
 ${userResponse.installation}
+<br>
 <a name="usage"></a>
 ### 3. Usage
 ${userResponse.usage}
+<br>
 <a name="contributing"></a>
 ### 4. Contributors
 ${userResponse.guidelines}
+<br>
 <a name="tests"></a>
 ### 5. Tests
 ${userResponse.testInstructions}
+<br>
 <a name="license"></a>
 ### 6. License
 ${userResponse.license}
+<br>
 <a name="questions"></a>;
-### 7. If you have any questions direct them to...
-${userResponse.username} + ${userResponse.repo}`;
+### 7. If you have any questions direct them to
+${userResponse.username} on Github`;
 }
 
 //use inquirer to prompt users with questions
