@@ -1,4 +1,4 @@
-# dsgs
+# Easy Mode README Generator
 ## Contents 
 1. [ Description ](#description)
 2. [ Installation ](#installation)
@@ -9,29 +9,29 @@
 7. [ Questions ](#questions)
 <br>
 <a name="description"></a>
-##1. Description
-dsg
+## 1. Description
+This project was a homework assignment for the UW Coding bootcamp where we were expected to build a README generator using the npm package inquirer.
 <br>
 <a name="install"></a>
-##2. Installation
-fhgds
+## 2. Installation
+No.
 <br>
 <a name="usage"></a>
 ## 3. Usage
-dsfs
+No.
 <br>
 <a name="contributing"></a>
 ## 4. Contributors
-sdfs
+No.
 <br>
 <a name="tests"></a>
 ## 5. Tests
-cvsd
+Be sure to install inquirer before running node index.js.
 <br>
 <a name="license"></a>
 ## 6. License
-gsg
+Unsure.
 <br>
 <a name="questions"></a>
 ## 7. If you have any questions contact me at:
-Github: sad
+Github: wmcmillan
