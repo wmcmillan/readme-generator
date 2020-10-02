@@ -1,12 +1,13 @@
 //npm initialization
 //install my dependencies- inquirer
-
 //require all the dependencies I'll need- inquirer, fs
 
 
 //write a README in a markdown file to generate a template
     //then copy/paste that template
-
+function mdTemplate(userResponse){
+    
+}
 //function that will generate my readme template
 
 //use inquirer to prompt users with questions
